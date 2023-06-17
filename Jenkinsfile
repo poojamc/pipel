@@ -8,7 +8,7 @@ agent { label 'slave2' }
 stages {
 stage('add') {
 steps {
-  sh 'echo addition of ${num1} and ${num2} is ${num1+num2}'
+  sh 'echo addition of ${num1} and ${num2} is `expr $num1 + $num2'
 }
 }
   stage('test') {
