@@ -1,7 +1,7 @@
 pipeline {
 agent { label 'slave2' }
   parameters{
-    choice(name:'number', choice:['1', '2', '3'])
+    choice(name:'number',choice:['1', '2', '3'])
   }
 stages {
 stage('checkout') {
