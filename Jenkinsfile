@@ -9,7 +9,7 @@ stages {
 stage('add') {
 steps {
   sum=${num1+num2}
-  sh 'echo addition of ${num1} and ${num2} is $sum'
+  sh 'echo addition  is ${sum}'
 }
 }
   stage('test') {
