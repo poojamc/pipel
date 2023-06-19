@@ -6,15 +6,15 @@ agent { label 'slave2' }
     string(name:'num2',defaultValue:' ')
   }
 stages {
-stage('add') {
-steps {
-  sum=${num1+num2};
-  sh 'echo ${sum}'
+   stage('add') {
+   steps {
+    sum=${num1+num2};
+    sh 'echo ${sum}'
 }
 }
-  stage('test') {
-steps {
-sh 'echo this is test'
+   stage('test') {
+    steps {
+    sh 'echo this is test'
 }
 }
 }
