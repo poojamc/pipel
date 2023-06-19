@@ -8,8 +8,10 @@ agent { label 'slave2' }
 stages {
    stage('add') {
    steps {
-    sum=${num1+num2};
-    sh 'echo ${sum}'
+      int a = params.num1;
+      int b = params.num2;   
+      c = a + b;
+     echo "sum is ${c}
 }
 }
    stage('test') {
