@@ -11,7 +11,7 @@ stages {
       int a = params.num1;
       int b = params.num2;   
       c = a + b;
-     echo "sum is ${c}
+     echo "sum is ${c}"
 }
 }
    stage('test') {
